@@ -118,9 +118,15 @@
       word-spacing: normal;
       line-height: 170%;
       font: 100 1.2rem $text1;
+      animation: textUp 0.7s linear infinite alternate;
+    }
+    // @keyframes textUp {
+    //   to {
+    //     transform: translateY(-10px);
+    //   }
+      
     }
   }
-}
 
 .home4 {
   width: 100%;

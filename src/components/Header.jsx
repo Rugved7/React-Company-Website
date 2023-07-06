@@ -2,16 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/App.scss';
 import '../styles/Header.scss';
-//  import { HashLink } from 'react-router-hash-link'
+  import { HashLink } from 'react-router-hash-link'
 const Header = () => {
   return (
     <nav>
       <h1>Rugved's Company</h1>
       <main>
-        <Link to={"/"}>Home</Link>
+        <HashLink to={"/"}>Home</HashLink>
+        <HashLink to={"/#about"}>About</HashLink> {/* HashLink is used to go to about section */}
+         <HashLink to ={"/#brands"}>Brands</HashLink> 
         <Link to={"/contact"}>Contact</Link>
-        <a href={"/#about"}>About</a> {/* HashLink is used to go to about section */}
-         <a href={"/#brands"}>Brands</a> 
         <Link to={"/services"}>Services</Link>
       </main>
     </nav>
